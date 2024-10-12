@@ -22,3 +22,6 @@ Following is the Data Dictionary for Credit Card dataset :-
 - MINIMUM_PAYMENTS : Minimum amount of payments made by user
 - PRCFULLPAYMENT : Percent of full payment paid by user
 - TENURE : Tenure of credit card service for user
+
+Dataset taken from kaggle and link: 
+[Clikh here to get the data](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata)
