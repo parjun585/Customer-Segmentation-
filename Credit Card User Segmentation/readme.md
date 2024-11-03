@@ -23,19 +23,19 @@ The project aims to assist in understanding customer behavior by segmenting them
 
 ## Installation
 1. **Clone the repository**:
-   \`\`\`bash
+   \`\`\`
    git clone https://github.com/parjun585/Customer-Segmentation-/tree/main/Credit%20Card%20User%20Segmentation
    cd Customer-Segmentation-/Credit\ Card\ User\ Segmentation
    \`\`\`
 
 2. **Set up a virtual environment**:
-   \`\`\`bash
+   \`\`\`
    python3 -m venv env
    source env/bin/activate
    \`\`\`
 
 3. **Install dependencies**:
-   \`\`\`bash
+   \`\`\`
    pip install -r requirements.txt
    \`\`\`
 
@@ -65,8 +65,8 @@ The model aids in segmenting customers into actionable categories, which busines
 ## How to Use
 To use the Streamlit app for this project:
 1. Run the app locally:
-   \`\`\`bash
-   streamlit run Market_Segmentation_Customer_Data.ipynb
+   \`\`\`
+   streamlit run app.py
    \`\`\`
 2. Input new customer data and get a prediction of the cluster.
 
@@ -75,6 +75,5 @@ To use the Streamlit app for this project:
 - Explore deeper feature engineering to identify new customer behaviors.
 - Integrate customer segmentation with real-time business data for live predictions.
 
-## Acknowledgments
-Special thanks to the [Click here to get the data](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata) and resources on clustering and machine learning for guidance and support.
+
 
