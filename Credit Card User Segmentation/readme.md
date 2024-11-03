@@ -1,27 +1,80 @@
-# About Dataset
-This case requires to develop a customer segmentation to define marketing strategy. The
-sample Dataset summarizes the usage behavior of about 9000 active credit card holders during the last 6 months. The file is at a customer level with 18 behavioral variables.
+# Market Segmentation of Customer Data
 
-Following is the Data Dictionary for Credit Card dataset :-
+## Overview
+This project analyzes customer segmentation using machine learning to understand and group customer behavior based on their credit card usage. The primary goal is to enable targeted marketing by identifying customer groups with similar characteristics.
 
-- CUST_ID : Identification of Credit Card holder (Categorical)
-- BALANCE : Balance amount left in their account to make purchases (
-- BALANCE_FREQUENCY : How frequently the Balance is updated, score between 0 and 1 (1 = frequently updated, 0 = not frequently updated)
-- PURCHASES : Amount of purchases made from account
-- ONEOFF_PURCHASES : Maximum purchase amount done in one-go
-- INSTALLMENTS_PURCHASES : Amount of purchase done in installment
-- CASH_ADVANCE : Cash in advance given by the user
-- PURCHASES_FREQUENCY : How frequently the Purchases are being made, score between 0 and 1 (1 = frequently purchased, 0 = not frequently purchased)
-- ONEOFFPURCHASESFREQUENCY : How frequently Purchases are happening in one-go (1 = frequently purchased, 0 = not frequently purchased)
-- PURCHASESINSTALLMENTSFREQUENCY : How frequently purchases in installments are being done (1 = frequently done, 0 = not frequently done)
-- CASHADVANCEFREQUENCY : How frequently the cash in advance being paid
-- CASHADVANCETRX : Number of Transactions made with "Cash in Advanced"
-- PURCHASES_TRX : Numbe of purchase transactions made
-- CREDIT_LIMIT : Limit of Credit Card for user
-- PAYMENTS : Amount of Payment done by user
-- MINIMUM_PAYMENTS : Minimum amount of payments made by user
-- PRCFULLPAYMENT : Percent of full payment paid by user
-- TENURE : Tenure of credit card service for user
+## Table of Contents
+- [Overview](#overview)
+- [Project Motivation](#project-motivation)
+- [Project Files](#project-files)
+- [Installation](#installation)
+- [Data Description](#data-description)
+- [Methods and Models Used](#methods-and-models-used)
+- [Results](#results)
+- [How to Use](#how-to-use)
+- [Future Work](#future-work)
+- [Acknowledgments](#acknowledgments)
 
-Dataset taken from kaggle and link: 
-[Click here to get the data](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata)
+## Project Motivation
+The project aims to assist in understanding customer behavior by segmenting them into clusters. Market segmentation helps businesses target specific customer groups and tailor their marketing strategies. This can lead to improved customer satisfaction and increased sales.
+
+## Project Files
+- \`Market_Segmentation_Customer_Data.ipynb\`: The main Jupyter notebook file containing all analysis steps, model training, and evaluation.
+
+## Installation
+1. **Clone the repository**:
+   \`\`\`bash
+   git clone https://github.com/parjun585/Customer-Segmentation-/tree/main/Credit%20Card%20User%20Segmentation
+   cd Customer-Segmentation-/Credit\ Card\ User\ Segmentation
+   \`\`\`
+
+2. **Set up a virtual environment**:
+   \`\`\`bash
+   python3 -m venv env
+   source env/bin/activate
+   \`\`\`
+
+3. **Install dependencies**:
+   \`\`\`bash
+   pip install -r requirements.txt
+   \`\`\`
+
+## Data Description
+The dataset includes information on the usage patterns of approximately 9000 active credit card holders, such as:
+- **Balance**: Average balance amount
+- **Purchases**: Total amount of purchases
+- **Cash Advance**: Amount of cash advance taken
+- **Transactions**: Number and frequency of transactions
+- **Payments**: Payments made towards the balance
+
+## Methods and Models Used
+1. **Exploratory Data Analysis (EDA)**: Initial data analysis to understand distributions, trends, and relationships.
+2. **Clustering using K-Means**: Clustered customers into groups based on their usage patterns.
+3. **Decision Tree Classifier**: Further classified customers based on specific features for enhanced targeting and insights.
+4. **Deployment with Streamlit**: Deployed a Streamlit app allowing users to predict the cluster of a new customer based on input features.
+
+## Results
+The K-Means clustering algorithm successfully grouped customers into four distinct clusters:
+- **Cluster 0**: Low engagement users with minimal purchases.
+- **Cluster 1**: High-spending users with a high number of purchases.
+- **Cluster 2**: Frequent users with moderate purchases and consistent payments.
+- **Cluster 3**: Occasional users primarily relying on cash advances.
+
+The model aids in segmenting customers into actionable categories, which businesses can use for marketing and customer relationship strategies.
+
+## How to Use
+To use the Streamlit app for this project:
+1. Run the app locally:
+   \`\`\`bash
+   streamlit run Market_Segmentation_Customer_Data.ipynb
+   \`\`\`
+2. Input new customer data and get a prediction of the cluster.
+
+## Future Work
+- Expand the model to include additional classification algorithms for comparison.
+- Explore deeper feature engineering to identify new customer behaviors.
+- Integrate customer segmentation with real-time business data for live predictions.
+
+## Acknowledgments
+Special thanks to the [Click here to get the data](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata) and resources on clustering and machine learning for guidance and support.
+
