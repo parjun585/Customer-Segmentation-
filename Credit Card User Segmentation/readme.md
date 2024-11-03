@@ -23,21 +23,21 @@ The project aims to assist in understanding customer behavior by segmenting them
 
 ## Installation
 1. **Clone the repository**:
-   \`\`\`bash
+   ```sh
    git clone https://github.com/parjun585/Customer-Segmentation-/tree/main/Credit%20Card%20User%20Segmentation
    cd Customer-Segmentation-/Credit\ Card\ User\ Segmentation
-   \`\`\`
+   ```
 
 2. **Set up a virtual environment**:
-   \`\`\`bash
+  ```sh
    python3 -m venv env
    source env/bin/activate
-   \`\`\`
+   ```
 
 3. **Install dependencies**:
-   \`\`\`bash
+    ```sh
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 ## Data Description
 The dataset includes information on the usage patterns of approximately 9000 active credit card holders, such as:
@@ -65,9 +65,9 @@ The model aids in segmenting customers into actionable categories, which busines
 ## How to Use
 To use the Streamlit app for this project:
 1. Run the app locally:
-   \`\`\`
+   ```sh
    streamlit run app.py
-   \`\`\`
+   ```
 2. Input new customer data and get a prediction of the cluster.
 
 ## Future Work
