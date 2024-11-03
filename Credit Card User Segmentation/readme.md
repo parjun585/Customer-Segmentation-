@@ -29,10 +29,10 @@ The project aims to assist in understanding customer behavior by segmenting them
    ```
 
 2. **Set up a virtual environment**:
-  ```sh
+   ```sh
    python3 -m venv env
    source env/bin/activate
-   ```
+    ```
 
 3. **Install dependencies**:
     ```sh
