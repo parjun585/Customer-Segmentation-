@@ -13,7 +13,7 @@ This project analyzes customer segmentation using machine learning to understand
 - [Results](#results)
 - [How to Use](#how-to-use)
 - [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Project Motivation
 The project aims to assist in understanding customer behavior by segmenting them into clusters. Market segmentation helps businesses target specific customer groups and tailor their marketing strategies. This can lead to improved customer satisfaction and increased sales.
