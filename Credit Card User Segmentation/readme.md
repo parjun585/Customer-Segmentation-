@@ -23,19 +23,19 @@ The project aims to assist in understanding customer behavior by segmenting them
 
 ## Installation
 1. **Clone the repository**:
-   \`\`\`
+   \`\`\`bash
    git clone https://github.com/parjun585/Customer-Segmentation-/tree/main/Credit%20Card%20User%20Segmentation
    cd Customer-Segmentation-/Credit\ Card\ User\ Segmentation
    \`\`\`
 
 2. **Set up a virtual environment**:
-   \`\`\`
+   \`\`\`bash
    python3 -m venv env
    source env/bin/activate
    \`\`\`
 
 3. **Install dependencies**:
-   \`\`\`
+   \`\`\`bash
    pip install -r requirements.txt
    \`\`\`
 
